@@ -1,0 +1,60 @@
+Local de Pagamento
+PAGÁVEL EM QUALQUER BANCO E/OU LOTÉRICA ATÉ A DATA DO VENCIMENTO.
+
+Beneficiário CPF/CNPJ
+CONCEITOS FACILITY LTDA ME - SHVP RUA 03 CH 48  LOTE 01,  - Fone: 3597-3202 - Vicente 22.494.530/0001-76
+
+Data do Documento Nr. Documento Espécie Data Processamento
+02/06/2021 04/115 R$ 02/06/2021
+
+COMPOSIÇÃO DE ARRECADAÇÃO Identificador
+Tx. de Condomínio - 05/2021. 265,00 1531.3128.4174
+
+Vencimento
+25/06/2021
+
+Agência / Código do Beneficiário
+4001 / 0325813
+
+Nosso Número
+0623318-7
+
+(=) Valor Documento
+265,00
+
+(-) Descontos
+
+(-) Outras/Deduções/Abat
+
+(+) Mora/Multa/Juros
+
+(+) Outros Acrescimos
+
+Pagador: (=) ValorCobrado:
+ROBERTO DE MELO BRETAS CPF: 225.279.071-72 CONDOMÍNIO RESIDENCIAL VALE
+RUA 05 CH 232 CASA 04 - VICENTE PIRES - BRASILIA/DF - 72006-125 04
+
+756-0 75691.40010  01032.581306  62331.870014  9  86620000026500
+Local de Pagamento Vencimento
+PAGÁVEL EM QUALQUER BANCO E/OU LOTÉRICA ATÉ A DATA DO VENCIMENTO. 25/06/2021
+Beneficiário CPF/CNPJ Agência / Código do Beneficiário
+CONCEITOS FACILITY LTDA ME - SHVP RUA 03 CH 48  LOTE 01,  - Fone: 3597-3202 - Vicente Pires/DF - 72110- 22.494.530/0001-76 4001 / 0325813
+Data do Documento Nr. Documento Espécie DOC Aceite Data Processamento Nosso Número
+02/06/2021 04/115 NS N 02/06/2021 0623318-7
+Uso Banco Carteira Espécie Qtde moeda Valor (=) Valor Documento
+01 R$ x 265,00
+Instruções (Texto de Responsabilidade do Beneficiário): (-) Descontos
+VALOR A SER PAGO ATÉ 25/06/2021: R$200,00 (valor desconto = R$ 65,00)1) SR. CAIXA APÓS
+O VENCIMENTO COBRAR MULTA DE 2% E JUROS DE 1% AO MÊS. (-) Outras/Deduções/Abat
+2) NÃO RECEBER APÓS 30 DIAS DA DATA DE VENCIMENTO.SR. CONDÔMINO APÓS ESTE
+PRAZO ENTRAR EM CONTATO COM O  ESCRITÓRIO DA CONCEITOS FACILITY TELEFONE 3597- (+) Mora/Multa/Juros
+3202.
+(+) Outros Acrescimos
+
+(=) Valor Cobrado:
+
+Pagador:
+ROBERTO DE MELO BRETAS CPF: 225.279.071-72 CONDOMÍNIO RESIDENCIAL VALE DAS
+RUA 05 CH 232 CASA 04 - VICENTE PIRES - BRASILIA/DF - 72006-125 04
+
+Autenticação Mecânica - Ficha de Compensação
