@@ -71,13 +71,11 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Tratamento_de_Arquivos" sap:VirtualizedContainerService.HintSize="426,1053" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="pastaDownload" />
       <Variable x:TypeArguments="x:String" Name="texto" />
       <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="resultado" />
       <Variable x:TypeArguments="x:Boolean" Name="renomeado" />
@@ -87,12 +85,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_arquivoDownload.FullName]" sap:VirtualizedContainerService.HintSize="384,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[texto]" />
-    <ui:Matches BuilderPattern="(?&lt;=(VALOR.A.SER.PAGO.ATÉ).*)(R\$\d*,(\d{2}))(?=.*valor.desconto)" sap:VirtualizedContainerService.HintSize="384,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=(VALOR.A.SER.PAGO.ATÉ).*)(R\\$\\d*,(\\d{2}))(?=.*valor.desconto)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=(VALOR.A.SER.PAGO.ATÉ).*)(R\$\d*,(\d{2}))(?=.*valor.desconto)" RegexOption="IgnoreCase" Result="[resultado]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="384,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Valor a pagar capturado: &quot;+resultado(0).toString]" />
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text - Arquivo baixado" FileName="[in_arquivoDownload.FullName]" sap:VirtualizedContainerService.HintSize="384,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[texto]" />
+    <ui:Matches BuilderPattern="(?&lt;=(VALOR.A.SER.PAGO.ATÉ).*)(R\$\d*,(\d{2}))(?=.*valor.desconto)" DisplayName="Matches - Regex captura valor" sap:VirtualizedContainerService.HintSize="384,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[texto]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=(VALOR.A.SER.PAGO.ATÉ).*)(R\\$\\d*,(\\d{2}))(?=.*valor.desconto)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=(VALOR.A.SER.PAGO.ATÉ).*)(R\$\d*,(\d{2}))(?=.*valor.desconto)" RegexOption="IgnoreCase" Result="[resultado]" />
+    <ui:LogMessage DisplayName="Log Message - Valor capturado" sap:VirtualizedContainerService.HintSize="384,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Valor a pagar capturado: &quot;+resultado(0).toString]" />
     <r:RenameFile DisplayName="Rename file" FilePath="[in_arquivoDownload.FullName]" sap:VirtualizedContainerService.HintSize="384,185" sap2010:WorkflowViewState.IdRef="RenameFile_1" IsRenamed="[renomeado]" NewFileName="[&quot;CONCEITOS FACILITY - &quot;+resultado(0).toString+&quot;.pdf&quot;]" />
-    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="384,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;\\192.168.0.6\1 - Arquivo_Geral_GlobalRed\1 - ADMINISTRATIVO\MOVIMENTO\XX-CONTAS ROBO-XX\CONCEITOS FACILITY\&quot;+DateTime.Now.ToString(&quot;MM-yyyy&quot;)]" />
-    <ui:MoveFile ContinueOnError="{x:Null}" Destination="[&quot;\\192.168.0.6\1 - Arquivo_Geral_GlobalRed\1 - ADMINISTRATIVO\MOVIMENTO\XX-CONTAS ROBO-XX\CONCEITOS FACILITY\&quot;+DateTime.Now.ToString(&quot;MM-yyyy&quot;)]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,157" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[in_arquivoDownload.Folder+&quot;CONCEITOS FACILITY - &quot;+resultado(0).toString+&quot;.pdf&quot;]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="384,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Sequência Tratamento de Arquivos executada.&quot;]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder - Pasta conta" sap:VirtualizedContainerService.HintSize="384,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;\\192.168.0.6\1 - Arquivo_Geral_GlobalRed\1 - ADMINISTRATIVO\MOVIMENTO\XX-CONTAS ROBO-XX\CONCEITOS FACILITY\&quot;+DateTime.Now.ToString(&quot;MM-yyyy&quot;)]" />
+    <ui:MoveFile ContinueOnError="{x:Null}" Destination="[&quot;\\192.168.0.6\1 - Arquivo_Geral_GlobalRed\1 - ADMINISTRATIVO\MOVIMENTO\XX-CONTAS ROBO-XX\CONCEITOS FACILITY\&quot;+DateTime.Now.ToString(&quot;MM-yyyy&quot;)]" DisplayName="Move File - Arquivo baixado" sap:VirtualizedContainerService.HintSize="384,157" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[in_arquivoDownload.Folder+&quot;CONCEITOS FACILITY - &quot;+resultado(0).toString+&quot;.pdf&quot;]" />
+    <ui:LogMessage DisplayName="Log Message - Tratamento de arquivos executada" sap:VirtualizedContainerService.HintSize="384,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Sequência Tratamento de Arquivos executada.&quot;]" />
   </Sequence>
 </Activity>
