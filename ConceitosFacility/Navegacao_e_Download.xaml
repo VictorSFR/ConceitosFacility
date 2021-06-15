@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1224,2286</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2286</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Navegação_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -78,22 +78,22 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[in_Browser]" DisplayName="Attach Browser - Conceitos Facility" sap:VirtualizedContainerService.HintSize="878,1898" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
-      <ui:BrowserScope.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
-          </ActivityAction.Argument>
-          <TryCatch DisplayName="Try Catch - Navegacao" sap:VirtualizedContainerService.HintSize="844,1790" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-            <TryCatch.Try>
-              <Sequence DisplayName="Sequence Navegacao" sap:VirtualizedContainerService.HintSize="806,1563" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <TryCatch DisplayName="Try Catch - Navegacao" sap:VirtualizedContainerService.HintSize="878,1898" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+      <TryCatch.Try>
+        <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[in_Browser]" DisplayName="Attach Browser - Conceitos Facility" sap:VirtualizedContainerService.HintSize="840,1671" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
+          <ui:BrowserScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Sequence Navegacao" sap:VirtualizedContainerService.HintSize="806,1563" sap2010:WorkflowViewState.IdRef="Sequence_21">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click - 'Boletos Disponiveis'" sap:VirtualizedContainerService.HintSize="764,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click - 'Boletos Disponiveis'" sap:VirtualizedContainerService.HintSize="764,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                   <ui:Click.CursorPosition>
                     <ui:CursorPosition Position="Center">
                       <ui:CursorPosition.OffsetX>
@@ -112,15 +112,15 @@
                     </ui:Target>
                   </ui:Click.Target>
                 </ui:Click>
-                <TryCatch DisplayName="Try Catch - Click Download" sap:VirtualizedContainerService.HintSize="764,425" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                <TryCatch DisplayName="Try Catch - Click Download" sap:VirtualizedContainerService.HintSize="764,425" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                   <TryCatch.Try>
-                    <ui:AnchorBase AnchorPosition="Right" DisplayName="Anchor Base - Click Download" sap:VirtualizedContainerService.HintSize="726,198" sap2010:WorkflowViewState.IdRef="AnchorBase_4">
+                    <ui:AnchorBase AnchorPosition="Right" DisplayName="Anchor Base - Click Download" sap:VirtualizedContainerService.HintSize="726,198" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
                           </ActivityAction.Argument>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - 'Original'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - 'Original'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -142,7 +142,7 @@
                         </ActivityAction>
                       </ui:AnchorBase.Action>
                       <ui:AnchorBase.AnchorProvider>
-                        <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element - 'A Vencer'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4" WaitActive="True" WaitVisible="True">
+                        <ui:WaitUiElementAppear FoundElement="{x:Null}" DisplayName="Find Element - 'A Vencer'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_6" WaitActive="True" WaitVisible="True">
                           <ui:WaitUiElementAppear.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1ed4346a-01bd-41ad-ba3c-55d669bc7e3e" InformativeScreenshot="3d3af4216735301a9da11440c6546a53" Selector="&lt;html app='chrome.exe' title='COM21' /&gt;&lt;webctrl aaname='A Vencer' parentid='main-content' tag='SPAN' /&gt;" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
@@ -161,7 +161,7 @@
                     </ui:AnchorBase>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="730,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="730,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -172,52 +172,21 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Sequence - Erro " sap:VirtualizedContainerService.HintSize="476,468" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <Sequence DisplayName="Sequence - Erro " sap:VirtualizedContainerService.HintSize="376,417" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message - Erro" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[&quot;Erro ao procurar por boleto a vencer&quot;+Environment.NewLine+&quot;Exception: &quot;+exception.Message+&quot; at &quot;+exception.Source]" />
-                          <TryCatch DisplayName="Try Catch- Erro finalizar processo" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="TryCatch_4">
-                            <TryCatch.Try>
-                              <ui:CloseApplication DisplayName="Close Application 'Intermediate D3D Window'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_2">
-                                <ui:CloseApplication.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1200119-3b57-4c73-9a58-118b2ce624a0" InformativeScreenshot="d7c6157ca3285c4d30bf1e8b4bdcf6bf" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='COM21 - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
-                                    <ui:Target.TimeoutMS>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:Target.TimeoutMS>
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:CloseApplication.Target>
-                              </ui:CloseApplication>
-                            </TryCatch.Try>
-                            <TryCatch.Catches>
-                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ActivityAction x:TypeArguments="s:Exception">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                  </ActivityAction.Argument>
-                                  <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process - Chrome" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome" />
-                                </ActivityAction>
-                              </Catch>
-                            </TryCatch.Catches>
-                          </TryCatch>
-                          <TerminateWorkflow DisplayName="Terminate Workflow - Erro" Exception="[exception]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" />
+                          <ui:LogMessage DisplayName="Log Message - Erro" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Error" Message="[&quot;Erro ao procurar por boleto a vencer&quot;+Environment.NewLine+&quot;Exception: &quot;+exception.Message+&quot; at &quot;+exception.Source]" />
+                          <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process - Chrome" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_6" ProcessName="chrome" />
+                          <TerminateWorkflow DisplayName="Terminate Workflow - Erro" Exception="[New Exception(&quot;Erro ao procurar por boleto a vencer&quot;)]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_5" Reason="Erro ao procurar por boleto a vencer" />
                         </Sequence>
                       </ActivityAction>
                     </Catch>
                   </TryCatch.Catches>
                 </TryCatch>
-                <Sequence DisplayName="Sequence - Tratamento_de_Arquivos" sap:VirtualizedContainerService.HintSize="764,860" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Sequence - Tratamento_de_Arquivos" sap:VirtualizedContainerService.HintSize="764,860" sap2010:WorkflowViewState.IdRef="Sequence_20">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="pastaDownload" />
                   </Sequence.Variables>
@@ -226,18 +195,18 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:GetEnvironmentFolder DisplayName="Get Environment Folder - Usuario" FolderPath="[pastaDownload]" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_2" SpecialFolder="UserProfile" />
-                  <ui:LogMessage DisplayName="Log Message - Nome usuario capturado" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Nome do usuário capturado: &quot;+pastaDownload]" />
-                  <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Wait for Download - PDF Conceitos Facility" DownloadFolder="[pastaDownload+&quot;\Downloads&quot;]" File="[out_ArquivoDownload]" sap:VirtualizedContainerService.HintSize="434,405" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_2">
+                  <ui:GetEnvironmentFolder DisplayName="Get Environment Folder - Usuario" FolderPath="[pastaDownload]" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetEnvironmentFolder_4" SpecialFolder="UserProfile" />
+                  <ui:LogMessage DisplayName="Log Message - Nome usuario capturado" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;Nome do usuário capturado: &quot;+pastaDownload]" />
+                  <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Wait for Download - PDF Conceitos Facility" DownloadFolder="[pastaDownload+&quot;\Downloads&quot;]" File="[out_ArquivoDownload]" sap:VirtualizedContainerService.HintSize="434,405" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_4">
                     <ui:GetLastDownloadedFile.Body>
                       <ActivityAction>
-                        <Sequence DisplayName="Sequence - Click Salvar" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence DisplayName="Sequence - Click Salvar" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_19">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - 'Salvar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - 'Salvar'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -266,76 +235,76 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:GetLastDownloadedFile>
-                  <ui:LogMessage DisplayName="Log Message - Arquivo baixado" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Arquivo baixado: &quot;+out_ArquivoDownload.FullName]" />
+                  <ui:LogMessage DisplayName="Log Message - Arquivo baixado" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;Arquivo baixado: &quot;+out_ArquivoDownload.FullName]" />
                 </Sequence>
               </Sequence>
-            </TryCatch.Try>
-            <TryCatch.Catches>
-              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="810,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ActivityAction x:TypeArguments="s:Exception">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Sequence - Erro navegacao" sap:VirtualizedContainerService.HintSize="480,618" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            </ActivityAction>
+          </ui:BrowserScope.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BrowserScope>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="844,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Sequence - Erro navegacao" sap:VirtualizedContainerService.HintSize="480,618" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;Erro durante sequência, Navegação e Download&quot;+Environment.NewLine+&quot;Exception: &quot;+exception.Message+&quot; at &quot;+exception.Source]" />
+              <TryCatch DisplayName="Try Catch - Fechar aplicacao" sap:VirtualizedContainerService.HintSize="438,333" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                <TryCatch.Try>
+                  <ui:CloseApplication DisplayName="Close Application - 'Chrome'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_4">
+                    <ui:CloseApplication.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36a2de9b-a573-403f-a0d7-d01d7e68ebb7" InformativeScreenshot="26ed862aa5c76513a15c971f357d596c" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='...::: Portal de Serviços PME - Central Nacional Unimed :::... -*' /&gt;&lt;ctrl name='...::: Portal de Serviços PME - Central Nacional Unimed :::...' role='document' /&gt;&lt;ctrl omit:name='Seja bem-vindo(a) RODRIGO RODRIGUES BRETAS ! Copyright 2002-2021*' role='cell' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:CloseApplication.Target>
+                  </ui:CloseApplication>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[&quot;Erro durante sequência, Navegação e Download&quot;+Environment.NewLine+&quot;Exception: &quot;+exception.Message+&quot; at &quot;+exception.Source]" />
-                    <TryCatch DisplayName="Try Catch - Fechar aplicacao" sap:VirtualizedContainerService.HintSize="438,333" sap2010:WorkflowViewState.IdRef="TryCatch_5">
-                      <TryCatch.Try>
-                        <ui:CloseApplication DisplayName="Close Application - 'Chrome'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_3">
-                          <ui:CloseApplication.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36a2de9b-a573-403f-a0d7-d01d7e68ebb7" InformativeScreenshot="26ed862aa5c76513a15c971f357d596c" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='...::: Portal de Serviços PME - Central Nacional Unimed :::... -*' /&gt;&lt;ctrl name='...::: Portal de Serviços PME - Central Nacional Unimed :::...' role='document' /&gt;&lt;ctrl omit:name='Seja bem-vindo(a) RODRIGO RODRIGUES BRETAS ! Copyright 2002-2021*' role='cell' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:CloseApplication.Target>
-                        </ui:CloseApplication>
-                      </TryCatch.Try>
-                      <TryCatch.Catches>
-                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ActivityAction x:TypeArguments="s:Exception">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                            </ActivityAction.Argument>
-                            <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome" />
-                          </ActivityAction>
-                        </Catch>
-                      </TryCatch.Catches>
-                    </TryCatch>
-                    <TerminateWorkflow DisplayName="Terminate Workflow Exception - Navegacao e Download" Exception="[exception]" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_2" Reason="Erro em navegacao e download." />
-                  </Sequence>
-                </ActivityAction>
-              </Catch>
-            </TryCatch.Catches>
-          </TryCatch>
-        </ActivityAction>
-      </ui:BrowserScope.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:BrowserScope>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="chrome" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <TerminateWorkflow DisplayName="Terminate Workflow Exception - Navegacao e Download" Exception="[exception]" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_3" Reason="Erro em navegacao e download." />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
     <ui:LogMessage DisplayName="Log Message - Navegacao executada" sap:VirtualizedContainerService.HintSize="878,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Sequence navegação e download executada.&quot;]" />
   </Sequence>
 </Activity>

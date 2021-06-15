@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2795" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,1479" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="78">
       <x:String>System.Activities</x:String>
@@ -91,7 +91,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="522,2630" sap2010:WorkflowViewState.IdRef="Sequence_17">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="480,1314" sap2010:WorkflowViewState.IdRef="Sequence_17">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="browser" />
       <Variable x:TypeArguments="si:FileInfo" Name="arquivoDownload" />
@@ -101,61 +101,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - Fechar aplicação" sap:VirtualizedContainerService.HintSize="480,740" sap2010:WorkflowViewState.IdRef="Sequence_20">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch - Finalizar Aplicacao" sap:VirtualizedContainerService.HintSize="438,648" sap2010:WorkflowViewState.IdRef="TryCatch_3">
-        <TryCatch.Try>
-          <ui:CloseApplication DisplayName="Close Application 'Intermediate D3D Window'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_2">
-            <ui:CloseApplication.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1200119-3b57-4c73-9a58-118b2ce624a0" InformativeScreenshot="d7c6157ca3285c4d30bf1e8b4bdcf6bf" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='COM21 - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
-                <ui:Target.TimeoutMS>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:Target.TimeoutMS>
-                <ui:Target.WaitForReady>
-                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                </ui:Target.WaitForReady>
-              </ui:Target>
-            </ui:CloseApplication.Target>
-          </ui:CloseApplication>
-        </TryCatch.Try>
-        <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,201" sap2010:WorkflowViewState.IdRef="Catch`1_3">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ActivityAction x:TypeArguments="s:Exception">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-              </ActivityAction.Argument>
-              <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process - Chrome" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome" />
-            </ActivityAction>
-          </Catch>
-        </TryCatch.Catches>
-        <TryCatch.Finally>
-          <ui:LogMessage DisplayName="Log Message - Automacao finalizada" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Automação finalizada.&quot;]" />
-        </TryCatch.Finally>
-      </TryCatch>
-    </Sequence>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke LoginConceitosFacility workflow" sap:VirtualizedContainerService.HintSize="480,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ConceitosFacility\LoginConceitosFacility.xaml">
+    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process - Chrome" sap:VirtualizedContainerService.HintSize="438,132" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="chrome" />
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke LoginConceitosFacility workflow" sap:VirtualizedContainerService.HintSize="438,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ConceitosFacility\LoginConceitosFacility.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="out_pastaDownload" />
         <OutArgument x:TypeArguments="ui:Browser" x:Key="out_Browser">[browser]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Navegacao_e_Download workflow" sap:VirtualizedContainerService.HintSize="480,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ConceitosFacility\Navegacao_e_Download.xaml">
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Navegacao_e_Download workflow" sap:VirtualizedContainerService.HintSize="438,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ConceitosFacility\Navegacao_e_Download.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="ui:Browser" x:Key="in_Browser">[browser]</InArgument>
         <OutArgument x:TypeArguments="si:FileInfo" x:Key="out_ArquivoDownload">[arquivoDownload]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="480,674" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,746" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
         <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Tratamento_de_Arquivos workflow" sap:VirtualizedContainerService.HintSize="361,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ConceitosFacility\Tratamento_de_Arquivos.xaml">
           <ui:InvokeWorkflowFile.Arguments>
@@ -186,48 +145,9 @@
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
+      <TryCatch.Finally>
+        <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process - Chrome" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="chrome" />
+      </TryCatch.Finally>
     </TryCatch>
-    <Sequence DisplayName="Sequence - Fechar aplicação" sap:VirtualizedContainerService.HintSize="480,740" sap2010:WorkflowViewState.IdRef="Sequence_18">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch - Finalizar Aplicacao" sap:VirtualizedContainerService.HintSize="438,648" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-        <TryCatch.Try>
-          <ui:CloseApplication DisplayName="Close Application 'Intermediate D3D Window'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
-            <ui:CloseApplication.Target>
-              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e1200119-3b57-4c73-9a58-118b2ce624a0" InformativeScreenshot="d7c6157ca3285c4d30bf1e8b4bdcf6bf" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin*' title='COM21 - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
-                <ui:Target.TimeoutMS>
-                  <InArgument x:TypeArguments="x:Int32" />
-                </ui:Target.TimeoutMS>
-                <ui:Target.WaitForReady>
-                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                </ui:Target.WaitForReady>
-              </ui:Target>
-            </ui:CloseApplication.Target>
-          </ui:CloseApplication>
-        </TryCatch.Try>
-        <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,201" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ActivityAction x:TypeArguments="s:Exception">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-              </ActivityAction.Argument>
-              <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process - Chrome" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome" />
-            </ActivityAction>
-          </Catch>
-        </TryCatch.Catches>
-        <TryCatch.Finally>
-          <ui:LogMessage DisplayName="Log Message - Automacao finalizada" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Automação finalizada.&quot;]" />
-        </TryCatch.Finally>
-      </TryCatch>
-    </Sequence>
   </Sequence>
 </Activity>
