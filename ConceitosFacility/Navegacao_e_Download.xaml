@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,1036</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2640</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Navegação_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -71,28 +71,29 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence - Navegacao" sap:VirtualizedContainerService.HintSize="476,871" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence - Navegacao" sap:VirtualizedContainerService.HintSize="632,2475" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch - Navegacao" sap:VirtualizedContainerService.HintSize="434,648" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+    <ui:LogMessage DisplayName="Log Message - Navegação e Download iniciada" sap:VirtualizedContainerService.HintSize="590,91" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Sequence Navegação e Download iniciada.&quot;]" />
+    <TryCatch DisplayName="Try Catch - Navegacao" sap:VirtualizedContainerService.HintSize="590,2121" sap2010:WorkflowViewState.IdRef="TryCatch_7">
       <TryCatch.Try>
-        <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[in_Browser]" DisplayName="Attach Browser - Conceitos Facility" sap:VirtualizedContainerService.HintSize="840,1671" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
+        <ui:BrowserScope BrowserType="{x:Null}" SearchScope="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" Browser="[in_Browser]" DisplayName="Attach Browser - Conceitos Facility" sap:VirtualizedContainerService.HintSize="552,1894" sap2010:WorkflowViewState.IdRef="BrowserScope_1">
           <ui:BrowserScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Sequence Navegacao" sap:VirtualizedContainerService.HintSize="806,1563" sap2010:WorkflowViewState.IdRef="Sequence_21">
+              <Sequence DisplayName="Sequence Navegacao" sap:VirtualizedContainerService.HintSize="518,1786" sap2010:WorkflowViewState.IdRef="Sequence_21">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click - 'Boletos Disponiveis'" sap:VirtualizedContainerService.HintSize="764,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click - 'Boletos Disponiveis'" sap:VirtualizedContainerService.HintSize="476,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                   <ui:Click.CursorPosition>
                     <ui:CursorPosition Position="Center">
                       <ui:CursorPosition.OffsetX>
@@ -111,7 +112,7 @@
                     </ui:Target>
                   </ui:Click.Target>
                 </ui:Click>
-                <TryCatch DisplayName="Try Catch - Click Download" sap:VirtualizedContainerService.HintSize="764,425" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                <TryCatch DisplayName="Try Catch - Click Download" sap:VirtualizedContainerService.HintSize="476,648" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                   <TryCatch.Try>
                     <ui:AnchorBase AnchorPosition="Right" DisplayName="Anchor Base - Click Download" sap:VirtualizedContainerService.HintSize="726,198" sap2010:WorkflowViewState.IdRef="AnchorBase_6">
                       <ui:AnchorBase.Action>
@@ -160,10 +161,10 @@
                     </ui:AnchorBase>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="730,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,486" sap2010:WorkflowViewState.IdRef="Catch`1_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -185,7 +186,7 @@
                     </Catch>
                   </TryCatch.Catches>
                 </TryCatch>
-                <Sequence DisplayName="Sequence - Tratamento_de_Arquivos" sap:VirtualizedContainerService.HintSize="764,860" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <Sequence DisplayName="Sequence - Tratamento_de_Arquivos" sap:VirtualizedContainerService.HintSize="476,860" sap2010:WorkflowViewState.IdRef="Sequence_20">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="pastaDownload" />
                   </Sequence.Variables>
@@ -248,10 +249,10 @@
         </ui:BrowserScope>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,486" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
