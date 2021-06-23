@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,1127</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1575</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LoginConceitosFacility_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
@@ -73,7 +73,7 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginConceitosFacility" sap:VirtualizedContainerService.HintSize="476,962" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginConceitosFacility" sap:VirtualizedContainerService.HintSize="547,1410" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="urlConceitosFacility" />
     </Sequence.Variables>
@@ -82,8 +82,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message - Sequence Login iniciada" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Sequence Login iniciada.&quot;]" />
-    <TryCatch DisplayName="Try Catch - Capturar Assets" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message - Sequence Login iniciada" sap:VirtualizedContainerService.HintSize="505,91" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Sequence Login iniciada.&quot;]" />
+    <TryCatch DisplayName="Try Catch - Capturar Assets" sap:VirtualizedContainerService.HintSize="505,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -158,9 +158,9 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <TryCatch DisplayName="Try Catch - Login" sap:VirtualizedContainerService.HintSize="434,648" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+    <TryCatch DisplayName="Try Catch - Login" sap:VirtualizedContainerService.HintSize="505,1096" sap2010:WorkflowViewState.IdRef="TryCatch_5">
       <TryCatch.Try>
-        <ui:OpenBrowser Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" CommunicationMethod="Native" DisplayName="Open Browser - Conceitos Facility " sap:VirtualizedContainerService.HintSize="467,909" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[out_Browser]" Url="[urlConceitosFacility]">
+        <ui:OpenBrowser Hidden="{x:Null}" NewSession="{x:Null}" BrowserType="Chrome" CommunicationMethod="Native" DisplayName="Open Browser - Conceitos Facility " sap:VirtualizedContainerService.HintSize="467,869" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Private="True" UiBrowser="[out_Browser]" Url="[urlConceitosFacility]">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -228,10 +228,10 @@
         </ui:OpenBrowser>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,486" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="471,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
